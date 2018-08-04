@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MoneySendingApp.EnterAmount">
+    <ContentPage.Content 
+        BackgroundColor="#2196F3">
+        <StackLayout
+            BackgroundColor="#FAFAFA"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+
+            <StackLayout
+                BackgroundColor="#2196F3"
+                Padding="60, 70, 60, 70">
+                <Label 
+                    Text="Amount"
+                    TextColor="#FFFFFF"
+                    FontSize="38"/>
+                <Label 
+                    TextColor="#FAFAFA"
+                    FontSize="16"
+                    Text="Enter how much you'd like to send"/>
+            </StackLayout>
+
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                Spacing="10">
+                <Entry 
+                    HeightRequest="40"
+                    WidthRequest="500"
+                    x:Name="amount"
+                    TextColor="#212121"/>
+
+                <Label 
+                    TextColor="#212121"
+                    FontSize="16"                
+                    HorizontalOptions="CenterAndExpand"
+                    x:Name="confirmLabel"
+                    FontAttributes="Italic"/>
+            </StackLayout>
+
+            <Button 
+                Text="CONFIRM"
+                x:Name="confirm"
+                BackgroundColor="#2196F3"
+                TextColor="#FFFFFF"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End"
+                BorderRadius="0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MoneySendingApp.SelectSourceCurrency">
+    <ContentPage.Content
+        BackgroundColor="#2196F3">
+        <StackLayout
+            BackgroundColor="#FAFAFA">
+
+            <StackLayout
+                BackgroundColor="#2196F3"
+                Padding="60, 70, 60, 70">
+                <Label 
+                    Text="Source"
+                    TextColor="#FFFFFF"
+                    FontSize="38"/>
+                <Label 
+                    TextColor="#FAFAFA"
+                    FontSize="16"
+                    Text="Select source currency"/>
+            </StackLayout>
+
+            <StackLayout
+                Padding="20, 10"
+                Orientation="Horizontal"
+                x:Name="eur">
+                <Label Text="€" 
+                    TextColor="#727272"
+                    FontSize="28"
+                    VerticalOptions="Center"/>
+                <StackLayout
+                    Padding="20, 0, 20, 0"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label 
+                        Text="EUR"
+                        TextColor="#212121"
+                        HorizontalOptions="Start"/>
+                    <Label 
+                        Text="Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia, and Spain"
+                        LineBreakMode="TailTruncation"
+                        TextColor="#727272"
+                        FontSize="14"/>
+                </StackLayout>
+            </StackLayout>
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="#B6B6B6"/>
+
+            <StackLayout
+                Padding="20, 10"
+                Orientation="Horizontal"
+                x:Name="gbp">
+                <Label Text="£" 
+                    TextColor="#727272"
+                    FontSize="28"
+                    VerticalOptions="Center"/>
+                <StackLayout
+                    Padding="20, 0, 20, 0"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label 
+                        Text="GBP"
+                        TextColor="#212121"
+                        HorizontalOptions="Start"/>
+                    <Label 
+                        Text="United Kingdom, Isle of Man, Channel Island, British Overseas Territories, British Indian Ocean Territory"
+                        LineBreakMode="TailTruncation"
+                        TextColor="#727272"
+                        FontSize="14"/>
+                </StackLayout>
+            </StackLayout>
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="#B6B6B6"/>
+                  
+            <StackLayout
+                Padding="20, 10"
+                Orientation="Horizontal"
+                x:Name="usd">
+                <Label Text="$" 
+                    TextColor="#727272"
+                    FontSize="28"
+                    VerticalOptions="Center"/>
+                <StackLayout
+                    Padding="20, 0, 20, 0"
+                    Spacing="0"
+                    VerticalOptions="Center">
+                    <Label 
+                        Text="USD"
+                        TextColor="#212121"
+                        HorizontalOptions="Start"/>
+                    <Label 
+                        Text="United States"
+                        LineBreakMode="TailTruncation"
+                        TextColor="#727272"
+                        FontSize="14"/>
+                </StackLayout>
+            </StackLayout>
+                
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
